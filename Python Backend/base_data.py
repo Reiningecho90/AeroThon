@@ -1,8 +1,8 @@
 '''
 Imports (procedurally added as needed)
 '''
-import pandas as pd
 import sys
+import pandas as pd
 
 '''
 Convert data from user entered list to DataFrame so pandas can handle it easier
@@ -40,21 +40,21 @@ data_check_key = {'Weight': 'Float (Decimal) in Grams',
                     'Center of Gravity Y': 'Float (Decimal) in CM'}
 indicies = ['Weight', 'Length', 'Maximum Diameter', 'Stability Caliber', 'CG: X', 'CG: Y']
 rocket_data_df = pd.DataFrame(rocket_data_list, index=indicies, columns=[rocket_name])
+type_check_cond = True
 if test == "True":
     print('Beginning Test Check of Data')
     process = 0
+    
     for i in rocket_data_list:
         key = list(data_check_key.keys())[process]
         value = list(data_check_key.values())[process]
         if not isinstance(i, float):
             process += 1
-            raise print(f'Value of {key} does not follow the format. Use: {value}.')
-
+            type_check_cond = False
         else:
-            print(f'{key} typecheck passed!')
             process += 1
             continue
 else:
     print('No check')
 
-print(rocket_data_df)
+print(type_check_cond)
