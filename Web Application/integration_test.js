@@ -6,11 +6,11 @@ The below code communicates with several python files
 
 const {PythonShell} = require('python-shell');
 
-function baseData(baseCondition) {
+function baseData(baseCondition, argus) {
     var baseInfoCondition = baseCondition;
 
     let options = {
-        args:["1.0", "2.0", "3.0", "4.0", "5.0", "6.0", baseInfoCondition, "RTA3"]
+        args: argus
     };
 
     PythonShell.run("../Python Backend/base_data.py", options).then(results=>{
@@ -25,6 +25,6 @@ function baseData(baseCondition) {
     });
 }
 
-baseData("False")
+baseData("False", ["1.0", "2.0", "3.0", "4.0", "5.0", "6.0", baseInfoCondition, "RTA3"])
 
 
