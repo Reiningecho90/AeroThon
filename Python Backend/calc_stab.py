@@ -13,7 +13,4 @@ cg_y = sys.argv[0]
 cp_y = sys.argv[1]
 avg_dia = sys.argv[2]
 
-def calc_stab(cg_y=cg_y, cp_y=cp_y, avg_dia=avg_dia):
-    return (cg_y-cp_y)/avg_dia
-
-print(calc_stab())
+print((cg_y-cp_y)/avg_dia)
