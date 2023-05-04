@@ -1,0 +1,33 @@
+body{
+    background-color: black;
+}
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    color: azure;
+    padding-left: 15px;
+    margin-bottom: 0px;
+}
+h2{
+    font-family: 'Courier New', Courier, monospace;
+    color: azure;
+    padding-left: 15px;
+    margin-top: 0px;
+}
+h3{
+    font-family: 'Courier New', Courier, monospace;
+    color: azure;
+    padding-left: 15px;
+    margin-top: 0px;
+}
+p{
+    font-family: 'Courier New', Courier, monospace;
+    color: azure;
+    padding-left: 15px;
+    margin-top: 0px;
+}
+button{
+    font-family: 'Courier New', Courier, monospace;
+    color: azure;
+    padding-left: 15px;
+    margin-top: 0px;
+}

@@ -22,12 +22,12 @@ ex: [430.0, 60.5, 6.1, 2.0, 20.2, 0.0]
 List will come from the user, some data like CG coords. and stab. cal. will be functions
 '''
 
-weight = float(sys.argv[1])
-length = float(sys.argv[2])
-max_dia = float(sys.argv[3])
-stab_cal = float(sys.argv[4])
-cg_x = float(sys.argv[5])
-cg_y = float(sys.argv[6])
+weight = float(str(sys.argv[1]))
+length = float(str(sys.argv[2]))
+max_dia = float(str(sys.argv[3]))
+stab_cal = float(str(sys.argv[4]))
+cg_x = float(str(sys.argv[5]))
+cg_y = float(str(sys.argv[6]))
 test = str(sys.argv[7])
 rocket_name = str(sys.argv[8])
 rocket_data_list = [weight, length, max_dia, stab_cal, cg_x, cg_y]
