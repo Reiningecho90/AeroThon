@@ -28,6 +28,7 @@ p{
 button{
     font-family: 'Courier New', Courier, monospace;
     color: azure;
+    background-color: darkblue;
     padding-left: 15px;
     margin-top: 0px;
 }
